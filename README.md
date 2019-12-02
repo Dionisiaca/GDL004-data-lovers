@@ -51,10 +51,17 @@ acuerdo a las necesidades de usuarios, se eligio el estilo y colores para asegur
 
 
 ## 4. Primer prototipo
+<<<<<<< HEAD
 ![pantalla1](../src/images/pantalla1.jpg)
 ![pantallapersonajes](/src/images/pantallapersonajes.jpg)
 ![pantallasorting](/src/images/pantallasorting.jpg)
 ![pantallacasas](/src/images/pantallacasas.jpg)
+=======
+![pantalla1](/src/Images/pantalla1.jpg)
+![pantallapersonajes](/src/Images/pantallapersonajes.jpg)
+![pantallasorting](/src/Images/pantallasorting.jpg)
+![pantallacasas](/src/Images/pantallacasas.jpg)
+>>>>>>> 3e6a17e4032ee21fa392f09ad0175d2fe15348c2
 
 ## 5. Prototipo figma
-![Figma](/src/images/figma.png)
+![Figma](/src/Images/figma.png)
