@@ -35,7 +35,7 @@
     </div>
     <!-- CHARACTERS -->
     <div id='Characters'>
-     <img src='http://www.thealmightyguru.com/Wiki/images/b/ba/Harry_Potter_-_Logo.png' alt='Harry Potter Logo' class='logo'>
+     <center><img src='http://www.thealmightyguru.com/Wiki/images/b/ba/Harry_Potter_-_Logo.png' alt='Harry Potter Logo' class='logo'></center>
      <div id='menuCharacters' class="filterMenu">
        <input type="text" placeholder="Search by name..." class='input' id="nameSearch"> </input> <!--input.placeholder/setAttribute-->
        <div>
@@ -75,22 +75,14 @@
    <div id="sortingHat" class="houses">
       <h1>SORTING HAT</h1>
       <p>Pick your Hogwarts house</p>
-      <div class="sortinBtn">
-        <button id="gryffindorBtn">GRYFFINDOR</button>
-        <img class=sortingLogo a href="#Gryffindor" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/a/a3/Gryffindor_Pottermore.png/revision/latest?cb=20140922195249">
-      </div>
-      <div class="sortinBtn">
-        <button id="slytherinBtn">SLYTHERIN</button>
-        <img class=sortingLogo a href="#Slytherin" src="https://vignette.wikia.nocookie.net/pottermore-blabla/images/a/a3/Blason_Serpentard.png/revision/latest?cb=20121030215201&path-prefix=fr">
-      </div>
-      <div class="sortinBtn">
-        <button id="hufflepuffBtn">HUFFLEPUFF</button>
-        <img class=sortingLogo a href="#Hufflepuff" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/4/42/Hufflepuff_Pottermore.png/revision/latest?cb=20141001131135">
-      </div>
-      <div class="sortinBtn">
-        <button id="ravenclawBtn">RAVENCLAW</button>
-        <img class=sortingLogo a href="#Ravenclaw" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/7/76/Ravenclaw_Pottermore.png/revision/latest?cb=20141001130914">
-      </div>
+      <img class=sortingLogo a href="#Gryffindor" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/a/a3/Gryffindor_Pottermore.png/revision/latest?cb=20140922195249">
+      <img class=sortingLogo a href="#Slytherin" src="https://vignette.wikia.nocookie.net/pottermore-blabla/images/a/a3/Blason_Serpentard.png/revision/latest?cb=20121030215201&path-prefix=fr">
+      <img class=sortingLogo a href="#Hufflepuff" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/4/42/Hufflepuff_Pottermore.png/revision/latest?cb=20141001131135">
+      <img class=sortingLogo a href="#Ravenclaw" src="https://vignette.wikia.nocookie.net/es.harrypotter/images/7/76/Ravenclaw_Pottermore.png/revision/latest?cb=20141001130914"><br>
+      <button id="gryffindorBtn">GRYFFINDOR</button>
+      <button id="slytherinBtn">SLYTHERIN</button>
+      <button id="hufflepuffBtn">HUFFLEPUFF</button>
+      <button id="ravenclawBtn">RAVENCLAW</button>
     </div>
     <!--GRYFFINDOR-->
     <div id="Gryffindor" class="Gryffindor">
@@ -133,7 +125,7 @@
               </select>
           </div>
       </div>
-      <div id="infoToFilterGryffindor"></div>
+      <div id="infoToFilterGryffindor" class="housesCards"></div>
     </div>
     <!--SLYTHERIN-->
     <div id="Slytherin" class="Slytherin">
@@ -169,7 +161,7 @@
                 <option value="3">Other/Unknown</option>
               </select>
             </div>
-          <div id="infoToFilterSlytherin"></div>
+          <div id="infoToFilterSlytherin" class="housesCards"></div>
       </div>
     </div>
     <!--HUFFLEPUFF-->
@@ -206,7 +198,7 @@
                 <option value="3">Other/Unknown</option>
               </select>
             </div>
-          <div id="infoToFilterHufflepuff"></div>
+          <div id="infoToFilterHufflepuff" class="housesCards"></div>
       </div>
     </div>
     <!--RAVENCLAW-->
@@ -243,7 +235,7 @@
                 <option value="3">Other/Unknown</option>
               </select>
             </div>
-          <div id="infoToFilterRavenclaw"></div>
+          <div id="infoToFilterRavenclaw" class="housesCards"></div>
       </div>
     </div>
     <script type="module" src="main.js"></script>
