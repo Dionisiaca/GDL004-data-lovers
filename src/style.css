@@ -1,47 +1,267 @@
 body{
-    background-color: #11151c;
-    color: #ddffdd;
+    background-color: #11151C;
 }
-
-.logo{
-    /*position: absolute;*/
-    float: center;
-    width: 20em;
-    height: 7em;
-    padding: 2em;
-    right: 30em;
-    z-index: 1;
+/*Menu de navegación */
+.mainMenu{
+    position: relative;  
+    float: left;
+    flex-wrap: wrap;
 }
-
-.input{   
-    /*position: relative;*/
-    background-color: #C4C4C4;
-    font-family:'Quattrocento', serif;
-    letter-spacing: .2em;
-    color: rgb(187, 153, 153);
+.menuSymbol{
+    height: 2em;
+    width: 2em;
 }
-
-#Characters{
-    /*position: relative;*/
-    width: 1010px;
-    height: 161px;
-    left: 215px;
-    top: 351px;
-}
-
-select{
-    /*position: relative;*/
+.mainMenuList{
+    display: none; 
+    background-color: rgba(17, 21, 28, 0.6);  
+    z-index: -1;
     font-family: Quattrocento;
     font-style: normal;
     font-weight: bold;
-    line-height: 29px;
+    font-size: 30px;
+    line-height: 62px;
     letter-spacing: 0.12em;
     color: #CDCFCD;
-    background-color: #11151c;
-    border:none;
+}
+.mainMenuList a:hover{
+    background-color: rgba(125, 78, 87, 0.6);
+    font-family: Quattrocento;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 62px;
+    letter-spacing: 0.12em;
+    color: #CDCFCD;
+}
+.mainMenu:hover .mainMenuList{
+    display: block;
+}
+.mainMenu:hover .menuSymbol{
+    background-color: transparent;
+} 
+
+/* Start screen */
+#Start {
+    display: flex, block;
+    background-image: url('https://i.ibb.co/qRTgXrV/fondoinicio.png');
+    text-align: center;
+    height: 250%;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 6%;
+    padding-bottom: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+#Start h1 {
+    font-family:'Quattrocento', serif;
+    font-weight: bold;
+    font-size: 200%;
+    letter-spacing: 0.12em;
+    color: #CDCFCD;
+}
+.startLogo{
+    width: 60%;
+}
+#Start p {
+    font-family: 'Fanwood Text', serif;
+    font-size: 100%;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    color: #DDFFDD;
+}  
+#Start button{
+    background: #57A879;
+    color: #CDCFCD;
+    font-family: Quattrocento;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100%;
+    line-height: 30%;
+    letter-spacing: 0.12em;
+    border-color: #57A879;
+    border: none;
+    border-radius: 8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    flex-wrap: wrap;
+}
+#Start button:hover{
+    background:  rgba(125, 78, 87, 0.6);
 }
 
+/* Sorting Hat */
+#sortingHat {
+    display: flex, none;
+    background-color: #11151C;
+    text-align: center;
+    padding-top: 8%;
+}
+#sortingHat h1{
+    font-family: Quattrocento;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 200%;
+    letter-spacing: 0.12em;
+    color: #CDCFCD;
+}
+#sortingHat p{
+    font-family: Quattrocento;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150%;
+    letter-spacing: 0.12em;    
+    color: #CDCFCD;
+    padding-top: 5%;
+}
+#sortingHat button{
+    font-family: Quattrocento;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.12em;
+    color: #CDCFCD;
+    background-color: #11151C;
+    border: none;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.sortingLogo{
+    width: 195px;
+    height: 223px;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+.sortinBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* Filter menu */
+.filterMenu{
+    display: flex;
+    justify-content: center;
+
+}
+input{
+      background-color: #C4C4C4;
+      font-family:'Quattrocento', serif;
+      letter-spacing: .2em;
+      color: rgb(187, 153, 153);
+      width: auto;
+      min-width: 160px;
+      max-height: 20px;
+      padding-left: 1em;
+}
+select{
+      font-family: Quattrocento;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 29px;
+      letter-spacing: 0.12em;
+      color: #CDCFCD;
+      background-color: transparent;
+      border:none;
+      padding-left: 1em;
+}
 select:hover{
-    background-color: rgba(125, 78, 87, 0.7);
-    opacity: .8;
+      background-color: rgba(125, 78, 87, 0.7);
+      opacity: .8;
+}
+/* Characters screen */
+#Characters {
+    display: none, flex;
+    background-color: #11151C;
+    width: 100%;
+    height: auto;
+    justify-content:center;
+}
+.logo{
+    width: 25%;
+}
+/*Pantallas casas*/
+#Gryffindor {
+    display: flex, none;
+    background-color:#7D0E0E;
+    image-orientation: center;
+    text-align: center;
+    justify-content:center;
+    color: #CDCFCD;
+}
+#Slytherin {
+    display: flex, none;
+    background-color:#113A1A;
+    image-orientation: center;
+    text-align: center;
+    justify-content:center;
+    color: #CDCFCD;
+}
+#Hufflepuff {
+    display: flex, none;
+    background-color: #BF9119;
+    image-orientation: center;
+    text-align: center;
+    justify-content:center;
+    color: #CDCFCD;
+}
+#Ravenclaw {
+    display: flex,none;
+    background-color: #272D4D;
+    image-orientation: center;
+    text-align: center;
+    justify-content:center;
+    color: #CDCFCD;    
+}
+
+/* Character cards */
+.harryPhotos{
+    margin: 20px 0 0 0;
+    width: 170px;
+    height: 210px;
+    padding: 0% 10% 0% 0%;    
+}
+
+#potterCards h1{
+    font-family: 'Quattrocento', serif;
+    letter-spacing: .4em;
+    font-size: 150%;
+    color: #7d4e57;
+    text-align: center;
+}
+#potterCards{
+    height: auto;
+    padding: 2em;
+    font-family: 'Fanwood';;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.characterBox{
+    background-color: white;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    /*padding-bottom: 1em;*/
+    text-align: center;
+    min-width: 300px;
+    max-width: 350px;
+}
+.characterBox p{
+    font-size: 90%
+}
+
+.housesCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
 }
